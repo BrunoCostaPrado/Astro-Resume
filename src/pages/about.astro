@@ -1,0 +1,19 @@
+---
+import { CounterReact } from "@/components/B"
+import Layout from "../layouts/Layout.astro"
+---
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>About</title>
+    </head>
+    
+</html>
+
+<Layout title="about">
+    <>
+    <CounterReact client:visible />
+    </>
+</Layout>
