@@ -1,6 +1,7 @@
 ---
 import { CounterReact } from "@/components/B.tsx"
 
+import Analytics from "@/lib/Analytics.astro"
 import Card from "../components/Card.astro"
 import Layout from "../layouts/Layout.astro"
 import "@/styles/globals.css"
@@ -16,7 +17,8 @@ import "@/styles/globals.css"
 	gtag('js', new Date());
   
 	gtag('config', 'G-HB4T8VE81V');
-  </script> -->
+  </script> -->	
+  <Analytics />
     </head>
     
 </html>

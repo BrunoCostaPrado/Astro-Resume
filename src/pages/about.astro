@@ -1,5 +1,6 @@
 ---
 import { CounterReact } from "@/components/B"
+import Analytics from "@/lib/Analytics.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 <html lang="pt-br">
@@ -7,6 +8,7 @@ import Layout from "../layouts/Layout.astro"
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
+        <Analytics />
         <title>About</title>
     </head>
     
