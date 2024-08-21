@@ -1,4 +1,5 @@
 ---
+import Analytics from "@/lib/Analytics.astro"
 interface Props {
   title: string
 }
@@ -14,15 +15,8 @@ const { title } = Astro.props
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<Analytics />
 		<title>{title}</title>
-  <script type="text/partytown" async src="https://www.googletagmanager.com/gtag/js?id=G-HB4T8VE81V"></script>
-  <script type="text/partytown">
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-  
-	gtag('config', 'G-HB4T8VE81V');
-  </script>
 	</head>
 	<body>
 		<slot />
