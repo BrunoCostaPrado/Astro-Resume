@@ -1,6 +1,6 @@
 ---
 import { CounterReact } from "@/components/B"
-import Analytics from "@/lib/Analytics.astro"
+// import Analytics from "@/lib/Analytics.astro"
 import Layout from "../layouts/Layout.astro"
 ---
 <html lang="pt-br">
@@ -8,7 +8,7 @@ import Layout from "../layouts/Layout.astro"
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <Analytics />
+        <!-- <Analytics /> -->
         <title>About</title>
     </head>
     
@@ -18,7 +18,10 @@ import Layout from "../layouts/Layout.astro"
     
     <h1>Bruno Costa Prado</h1>
     <CounterReact client:visible />
-    <h1 class="text-3xl font-bold underline text-sky-400">
+    <h1 class="text-3xl font-bold underline  flex grid-rows-5 text-sky-400">
+        Hello world!
+    </h1>
+    <h1 class="text-3xl font-bold underline">
         Hello world!
       </h1>
     

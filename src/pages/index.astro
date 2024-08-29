@@ -1,15 +1,24 @@
 ---
-import { Button } from "@/components/ui/button"
+
 import Card from "../components/Card.astro"
 import Layout from "../layouts/Layout.astro"
 import "@/styles/globals.css"
-import Analytics from "@/lib/Analytics.astro"
+import { CounterReact } from "@/components/B"
+// import Analytics from "@/lib/Analytics.astro"
+import {
+  a,
+  bruno,
+  community,
+  documentation,
+  integrations,
+  themes,
+} from "@/lib/string"
 ---
 <html lang="pt-br">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" /> 
-  <Analytics />
+  <!-- <Analytics /> -->
     </head>
     
 </html>
@@ -52,27 +61,38 @@ import Analytics from "@/lib/Analytics.astro"
 			<Card
 				href="https://docs.astro.build/"
 				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
+				body={documentation}
 			/>
 			<Card
 				href="https://astro.build/integrations/"
 				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
+				body={integrations}
 			/>
 			<Card
 				href="https://astro.build/themes/"
 				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
+				body={themes}
 			/>
 			<Card
 				href="https://astro.build/chat/"
 				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
+				body={community}
+			/>
+			<Card
+				href="a"
+				title="a"
+				body={a}
+			/>
+			<Card
+				href="Bruno/"
+				title="Bruno"
+				body={bruno}
 			/>
 		</ul>
 		<h1 class="text-3xl font-bold underline text-sky-400">
   Hello world!
 </h1>
+<CounterReact client:visible />
 	</main>
 </Layout>
 
