@@ -1,6 +1,8 @@
 ---
+import { Image } from "astro:assets"
 import { CounterReact } from "@/components/B"
-// import Analytics from "@/lib/Analytics.astro"
+import Card from "../components/Card.astro"
+import kartus from "../imgs/Skartus.png"
 import Layout from "../layouts/Layout.astro"
 ---
 <html lang="pt-br">
@@ -8,21 +10,27 @@ import Layout from "../layouts/Layout.astro"
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <!-- <Analytics /> -->
+
         <title>About</title>
     </head>
     
 </html>
 
 <Layout title="about">
-    
     <h1>Bruno Costa Prado</h1>
     <CounterReact client:visible />
     <h1 class="text-3xl font-bold underline  flex grid-rows-5 text-sky-400">
         Hello world!
     </h1>
-    <h1 class="text-3xl font-bold underline">
+    <h1 class="text-3xl font-bold underline ">
+        <Image src={kartus} alt="A bird sitting on a nest of eggs." width="500" height="500" />
         Hello world!
-      </h1>
+    </h1>
+    <Card 
+				href="/"
+				title="Index"
+				body="astro"
+                
+			/>
     
 </Layout>
